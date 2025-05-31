@@ -1,3 +1,4 @@
+## Namespace
 * kubernetes create the `default` namespace by default. Other k8 namespaces are `kube-system` , `kube-public`
 * commands
 ```
