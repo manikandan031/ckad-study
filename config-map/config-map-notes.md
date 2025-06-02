@@ -1,6 +1,6 @@
 ### Config Maps
 * Environment variables for pods
-```
+```yaml
 spec:
   containers:
    - name: nginx
@@ -10,7 +10,7 @@ spec:
          value: green
 ```
 * ConfigMaps are used to remove hardcoded environment variables in the pod definition and manage them centrally
-```
+```bash
 # create config map - imperative - from-literal
 kubectl create configmap myapp-config --from-literal=APP_COLOR=green --from-literal=APP_VERSION=1.0
 
@@ -22,7 +22,7 @@ kubectl describe configmap myapp-config
 ```
 
 * inject env variable from configmap in a pod - all configs
-```
+```yaml
 spec:
   containers:
    - name: nginx
@@ -33,7 +33,7 @@ spec:
 ```
 
 * inject env variabe from configmap in a pod - specific config from configmap
-```
+```yaml
 spec:
   containers:
     - name: nginx

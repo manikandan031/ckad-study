@@ -8,7 +8,7 @@ CMD ["5"]
 ```
 
 Pod definition
-```
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -25,7 +25,7 @@ In the above definition `args` override the `CMD` in Dockerfile and
 The first item in the command array should be the executable command
 
 ### Commands - override Entrypoint and CMD
-```
+```bash
 ENTRYPOINT ["python", "app.py"]
 CMD ["--color", "blue"]
 

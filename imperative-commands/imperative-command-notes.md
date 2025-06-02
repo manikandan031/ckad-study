@@ -1,5 +1,5 @@
 ## Imperative commands
-```
+```bash
 # create pod
 kubectl run nginx --image=nginx
 
@@ -13,8 +13,8 @@ kubectl create deployment nginx --image=nginx --dry-run=client -o yaml > nginx-d
 # create deployment with replicas
 kubectl create deployment nginx --image=nginx --replicas=4
 
-# create service
-kubectl expose pod redis-pod --port=6379 --name=redis-service (this automatically uses pods labels as selectors)
+# create service (automatically uses pods labels as selectors)
+kubectl expose pod redis-pod --port=6379 --name=redis-service 
 
 # create pod and expose as service
 kubectl run nginx-pod --image=nginx:latest --port=80 --expose=true 

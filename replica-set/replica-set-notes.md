@@ -5,10 +5,10 @@
   - *template* - the pod definition
   - *replicas* - number of replicas
 - kubectl scale command example
-    ```
+    ```sh
      kubectl scale rs my-replica-set --replicas=4
     ```
 - kubectl get object as yml file
-    ```
+    ```sh
      kubectl get rs my-replica-set -o yaml > my-replica-set.yml
     ```

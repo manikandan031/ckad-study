@@ -1,5 +1,5 @@
 ## Docker
-```
+```bash
 # build image
 docker build . -t <name>:<tag>
 
@@ -11,7 +11,7 @@ docker run -it <image>:<tag> cat /etc/os-release
 
 ```
 ### Docker file CMD and Entrypoint
-```
+```bash
 FROM ubuntu
 CMD ["sleep", "5"]
 
