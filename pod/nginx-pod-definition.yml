@@ -8,3 +8,11 @@ spec:
   containers:
     - name: nginx-container
       image: nginx:latest
+      command:
+        - sleep
+      args:
+        - 5000
+      securityContext:
+        runAsUser: 1000
+        capabilities:
+          add: ["NET_ADMIN"]
