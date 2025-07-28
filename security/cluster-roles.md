@@ -27,3 +27,6 @@ roleRef:
   kind: ClusterRole
   apiGroup: rbac.authorization.k8s.io
 ```
+```shell
+kubectl api-resources #to get information about api groups
+```
